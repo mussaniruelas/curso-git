@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos Básicos de Git</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900">
+    <header class="bg-gradient-to-r from-blue-500 to-blue-700 text-white p-8 shadow-lg">
+        <div class="container mx-auto">
+            <h1 class="text-4xl font-extrabold mb-4">Bienvenidos al Tutorial de Conceptos Básicos de Git</h1>
+            <nav>
+                <ul class="flex justify-center space-x-8">
+                    <li><a href="#introduccion" class="hover:text-blue-200 transition duration-300">Introducción</a></li>
+                    <li><a href="#instalacion" class="hover:text-blue-200 transition duration-300">Instalación</a></li>
+                    <li><a href="#comandos" class="hover:text-blue-200 transition duration-300">Comandos Básicos</a></li>
+                    <li><a href="#recursos" class="hover:text-blue-200 transition duration-300">Recursos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="container mx-auto py-12">
+        <section id="introduccion" class="mb-16 bg-white p-8 shadow rounded-lg">
+            <h2 class="text-3xl font-bold text-blue-600 mb-6">Introducción</h2>
+            <p class="leading-relaxed text-gray-700">En esta sección, aprenderás los conceptos básicos de Git y por qué es una herramienta esencial para el control de versiones. Git te permite gestionar cambios en el código de manera eficiente y colaborativa, asegurando la integridad y el seguimiento de cada modificación en los proyectos.</p>
+        </section>
+        <section id="instalacion" class="mb-16 bg-white p-8 shadow rounded-lg">
+            <h2 class="text-3xl font-bold text-blue-600 mb-6">Instalación</h2>
+            <p class="leading-relaxed text-gray-700">Guía paso a paso para instalar Git en diferentes sistemas operativos. Asegúrate de tener permisos de administrador y sigue los comandos específicos para tu entorno (Windows, macOS o Linux).</p>
+            <ul class="list-disc list-inside mt-4 space-y-2">
+                <li><span class="font-semibold text-gray-800">Windows:</span> Descargar el instalador desde el sitio oficial y seguir el asistente de instalación.</li>
+                <li><span class="font-semibold text-gray-800">macOS:</span> Instalar usando <code class="bg-gray-200 px-1 rounded">brew install git</code> si tienes Homebrew.</li>
+                <li><span class="font-semibold text-gray-800">Linux:</span> Usar el comando <code class="bg-gray-200 px-1 rounded">sudo apt-get install git</code> en distribuciones basadas en Debian.</li>
+            </ul>
+        </section>
+        <section id="comandos" class="mb-16 bg-white p-8 shadow rounded-lg">
+            <h2 class="text-3xl font-bold text-blue-600 mb-6">Comandos Básicos</h2>
+            <p class="leading-relaxed text-gray-700">Aquí encontrarás una lista de comandos esenciales para trabajar con Git:</p>
+            <div class="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="font-semibold text-xl text-gray-800 mb-2">Inicializar Repositorio</h3>
+                    <code class="block bg-gray-100 p-4 rounded-lg">git init</code>
+                    <p class="mt-2 text-gray-600">Crea un nuevo repositorio en el directorio actual.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl text-gray-800 mb-2">Agregar Archivos</h3>
+                    <code class="block bg-gray-100 p-4 rounded-lg">git add .</code>
+                    <p class="mt-2 text-gray-600">Añade todos los archivos al área de preparación.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl text-gray-800 mb-2">Realizar un Commit</h3>
+                    <code class="block bg-gray-100 p-4 rounded-lg">git commit -m "mensaje"</code>
+                    <p class="mt-2 text-gray-600">Guarda los cambios en el historial del repositorio.</p>
+                </div>
+                <div>
+                    <h3 class="font-semibold text-xl text-gray-800 mb-2">Ver Estado</h3>
+                    <code class="block bg-gray-100 p-4 rounded-lg">git status</code>
+                    <p class="mt-2 text-gray-600">Muestra el estado actual del repositorio.</p>
+                </div>
+            </div>
+        </section>
+        <section id="recursos" class="bg-white p-8 shadow rounded-lg">
+            <h2 class="text-3xl font-bold text-blue-600 mb-6">Recursos</h2>
+            <p class="leading-relaxed text-gray-700">Enlaces y materiales adicionales para profundizar en el uso de Git:</p>
+            <ul class="list-disc list-inside mt-4 space-y-2">
+                <li><a href="https://git-scm.com/doc" class="text-blue-600 hover:text-blue-800">Documentación oficial de Git</a></li>
+                <li><a href="https://learngitbranching.js.org/" class="text-blue-600 hover:text-blue-800">Learn Git Branching (interactivo)</a></li>
+                <li><a href="https://www.atlassian.com/git/tutorials" class="text-blue-600 hover:text-blue-800">Tutoriales de Git en Atlassian</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer class="bg-gradient-to-r from-gray-800 to-gray-900 text-white p-6 text-center mt-16">
+        <p class="text-sm">&copy; 2024 Tutorial de Conceptos Básicos de Git. Todos los derechos reservados.</p>
+        <div class="mt-4 space-x-4">
+            <a href="#" class="text-gray-400 hover:text-gray-200 transition duration-300">Política de Privacidad</a>
+            <a href="#" class="text-gray-400 hover:text-gray-200 transition duration-300">Términos de Uso</a>
+        </div>
+    </footer> 
+</body>
+</html>
